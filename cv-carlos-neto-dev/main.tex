@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.4, 27 July 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Navy}{HTML}{000080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{444444}
+\colorlet{heading}{Navy}
+\colorlet{accent}{Navy}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\usepackage[colorlinks]{hyperref}
+
+\begin{document}
+
+\name{Carlos Augusto dos Santos Neto}
+\tagline{Objetivo: Desenvolvedor Backend - Júnior}
+\personalinfo{
+    \email{\href{mailto:carlos.neto.dev@gmail.com}{carlos.neto.dev@gmail.com}}
+    \phone{\href{tel:5512987078145}{+55 12 987078145}}
+    \linkedin{\href{https://www.linkedin.com/in/carlos-neto-15494213b/}{Carlos Neto}}
+    \github{\href{https://github.com/augustoliks}{augustoliks} }
+    \location{\href{https://maps.google.com/maps?q=-23.296193,-46.027498}{Jacareí-SP}}
+}
+
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experiência}
+
+\cvevent{Programador Júnior 2}{Fotosensores Tecnologias LTDA}{Agosto 2020 -- Atual}{}
+\begin{itemize}
+    \item Desenvolvimento e testes com a linguagem Python;
+    \item Elaboração de Arquitetura de Sistemas;
+    \item Design e implementação de APIs;
+    \item Rotinas de entrada, filtro/transformação e saída de logs;
+    \item Empacotamento de bibliotecas e Softwares;
+    \item Otimização de imagens de containers;
+    \item Automação e proviosionamento de sistemas;
+    \item Criação e padronização de rotinas CI/CD;
+    \item Soluções de DevOps e colaborações de IaC;
+    \item Elaboração de Provas de Conceitos;
+    \item Padronização de documentações.
+\end{itemize}
+
+\divider
+
+\cvevent{Programador Júnior 1}{Fotosensores Tecnologias LTDA}{Junho 2019 -- Agosto 2020}{}
+\begin{itemize}
+    \item Desenvolvimento e testes com a linguagem Python;
+    \item Integrações entre sistemas;
+    \item Criação, coleta e exibição de métricas de Sistemas e  Softwares;
+    \item Monitoramento de Softwares e Sistemas;
+    \item Configuração de Proxy Reverso;
+    \item Documentação de procedimentos técnicos e operacionais.
+\end{itemize}
+
+\cvsection{Projetos}
+
+\cvevent{Mapbix: Sistema de Monitoramento de Equipamentos Fiscalizadores de Trânsito}
+{\MakeLowercase{python, flask, vue.js, zabbix, grafana, nginx}}{}{}
+\begin{itemize}
+    \item Trabalho de Graduação na Fatec São José dos Campos;
+    \item Atua como produto da empresa Fotosensores Tecnologia LTDA.
+\end{itemize}
+\divider
+
+\cvevent{PoC: realtime-log-web-viewer}
+{\MakeLowercase{python, fastAPI, rsyslog, docker, redis}}{}{}
+\begin{itemize}
+    \item PoC de exibição de logs de aplicações em tempo real em um ambiente Web;
+    \item \github{\href{https://github.com/augustoliks/realtime-log-web-viewer}{https://github.com/augustoliks/realtime-log-web-viewer}}
+\end{itemize}
+\divider
+
+\cvevent{Biblioteca Python: gelfguru}
+{\MakeLowercase{python, fastAPI, rsyslog, docker, redis}}{}{}
+\begin{itemize}
+    \item Adaptor de logs de aplicaçãoes Python para formato GELF;
+    \item \href{https://pypi.org/project/gelfguru/}{https://pypi.org/project/gelfguru/}
+    \item \github{\href{https://github.com/augustoliks/loguru-gelf-extension}{https://github.com/augustoliks/loguru-gelf-extension}}
+\end{itemize}
+
+
+\clearpage
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+\end{document}
