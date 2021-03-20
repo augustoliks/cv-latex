@@ -2,4 +2,4 @@
 
 Meu Currículo em LaTeX :rocket:  :man_student:	
 
-Acessível em: [cv_carlos_neto_dev.pdf](./cv-dev-carlos-augusto-santos-neto.pdf)
+[Clique aqui](./cv-dev-carlos-augusto-santos-neto.pdf) para acessar em formato .pdf
