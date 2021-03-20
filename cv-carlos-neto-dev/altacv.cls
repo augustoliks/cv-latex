@@ -77,6 +77,9 @@
 \newcommand{\githubsymbol}{\faGithub}
 \newcommand{\orcidsymbol}{\aiOrcid}
 \newcommand{\mailsymbol}{\faEnvelope}
+\newcommand{\agesymbol}{\faStar}
+\newcommand{\martialstatusymbol}{\faMale}
+
 
 \newcommand{\printinfo}[2]{\mbox{\textcolor{accent}{\normalfont #1}\hspace{0.5em}#2\hspace{2em}}}
 
@@ -93,6 +96,9 @@
 \newcommand{\orcid}[1]{\printinfo{\orcidsymbol}{#1}}
 \newcommand{\location}[1]{\printinfo{\locationsymbol}{#1}}
 
+\newcommand{\age}[1]{\printinfo{\agesymbol}{#1}}
+\newcommand{\martialstatus}[1]{\printinfo{\martialstatusymbol}{#1}}
+
 \newcommand{\personalinfo}[1]{\def\@personalinfo{#1}}
 
 \newcommand{\makecvheader}{%
@@ -101,7 +107,9 @@
     \raggedright\color{emphasis}%
     {\Huge\bfseries\MakeUppercase{\@name}\par}
     \medskip
+        \medskip
     {\large\bfseries\color{accent}\@tagline\par}
+    \medskip
     \medskip
     {\footnotesize\bfseries\@personalinfo\par}
     \ifdef{\@photodiameter}{%
