@@ -2,4 +2,6 @@
 
 Meu Currículo em LaTeX :rocket:  :man_student:	
 
-[Clique aqui](./cv-dev-carlos-augusto-santos-neto.pdf) para acessar em formato .pdf
+---
+
+[**Clique Aqui**](https://github.com/augustoliks/cv-latex/raw/main/cv-dev-carlos-augusto-santos-neto.pdf) para fazer o Download do meu currículo em PDF.
