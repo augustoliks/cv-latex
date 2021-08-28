@@ -56,7 +56,7 @@
 \begin{document}
 
 \name{Carlos Augusto dos Santos Neto}
-\tagline{OBJETIVO: DESENVOLVEDOR INTEGRADOR}
+\tagline{DEVOPS | DESENVOLVEDOR INTEGRADOR}
 
 \personalinfo{
     \mailaddress{
@@ -108,16 +108,18 @@
 \cvevent{Programador Júnior 2}{Fotosensores Tecnologia Eletrônica LTDA | Mobilidade Urbana}{Agosto 2020 -- Presente}{São José dos Campos-SP}
 \begin{itemize}
     \item Desenvolvimento, criação de bibliotecas e scripts com Python;
-    \item Preparação de ambientes de produção com Docker Compose, criação e otimização de imagens Docker e provisionamento com Ansible;
+    \item Desenvolvimento de utilitários de linha de comando com Go;
+    % \item Preparação de ambientes de produção com Docker Compose, criação e otimização de imagens Docker e provisionamento com Ansible;
+    \item Provisionamento de ambientes com Ansible;
     \item Integração de sistemas através de API com FastAPI e Flask;
     \item Configuração de entrada, filtro/transformação e saída de logs com Fluent Bit, Rsyslog, Redis e Graylog;
     \item Mensageria entre microserviços com RabbitMQ, Redis e ZeroMQ;
     \item Empacotamento de softwares para o formato RPM;
     \item Criação e padronização de rotinas CI/CD com o Gitlab;
-    \item Documentação de código fonte e projetos com Markdown e Sphinx, com acesso via GitLab Pages;
-    \item Estudos técnicos com base nas regras de negócio da empresa;
+    \item Documentação de código fonte e projetos com MKDocs e Sphinx, com acesso via GitLab Pages;
+    % \item Estudos técnicos com base nas regras de negócio da empresa;
     % (\href{https://pt.wikipedia.org/wiki/Prova_de_conceito}{PoC})
-    \item Configuração de Proxy Reverso e ambiente Web seguro, através do NGINX com SSL/TLS.
+    \item Configuração de servidores Web, através do NGINX (SSL/TLS).
 \end{itemize}
 
 \divider
@@ -126,35 +128,33 @@
 \begin{itemize}
     \item Desenvolvimento, criação de bibliotecas e testes com Python;
     % \item Integração de sistemas através de API com FastAPI e Flask;
-    \item Preparação de ambientes de produção com Docker Compose, e com a criação e otimização de imagens Docker;
+    \item Provisionamento de ambientes com Docker Compose;
     \item Coleta de métricas e monitoramento de sistemas com Python, Shell Script, Prometheus, Zabbix e Grafana.
 \end{itemize}
 
 \cvsection{Projetos}
 
-\cvevent{Produto: Sistema de Monitoramento de Equipamentos Fiscalizadores de Trânsito}
-{\MakeLowercase{python, flask, vue.js, zabbix, grafana, nginx, ansible, LDAP, gitlab}}{Abril 2018 -- Junho 2019}{}
+\cvevent{Sistema de Monitoramento de Equipamentos Fiscalizadores de Trânsito}
+{\MakeLowercase{python, bash, ansible, fastapi, zabbix, grafana, nginx, LDAP, gitlab ci/cd, docker-compose}} {Abril 2018 -- Junho 2019}{}
 \begin{itemize}
-    \item Desenvolvido para a empresa Fotosensores Tecnologia Eletrônica.
+    \item Desenvolvido para a empresa Fotosensores LTDA.
 \end{itemize}
 \divider
 
-\cvevent{Estudos Colaborativos: git-mini-book}
-{\MakeLowercase{mkdocs, markdown, git, github, github-actions}}{Dezembro 2020 -- Presente 2021}{}
+\cvevent{Plugin de Inventário Ansible}
+{\MakeLowercase{mkdocs, markdown, git, github, github-actions}}{Junho 2021}{}
 \begin{itemize}
-    \item Repositório de estudos colaborativos sobre a ferramenta Git;
-    \item \github{\href{https://github.com/augustoliks/git-mini-book}{https://github.com/augustoliks/git-mini-book}}
+    % \item Plugin de inventário Ansible, criada para obter equipamentos de forma costumizável, por meio de uma API HTTP;
+    \item \github{\href{https://github.com/augustoliks/ansible-ws-inventory-plugin}{https://github.com/augustoliks/ansible-ws-inventory-plugin}}
 \end{itemize}
 \divider
 
-\cvevent{Biblioteca Python: gelfguru}
-{\MakeLowercase{python, poetry, github, codacy, pypi}}{Maio 2020 -- Junho 2020}{}
+\cvevent{Integração de Autenticação NGINX com LDAP}
+{\MakeLowercase{python, flask, nginx, ldap, docker}}{Junho 2021}{}
 \begin{itemize}
-    \item Adaptador de logs de aplicações Python para o formato GELF;
-    \item \href{https://pypi.org/project/gelfguru/}{https://pypi.org/project/gelfguru/}
-    \item \github{\href{https://github.com/augustoliks/loguru-gelf-extension}{https://github.com/augustoliks/loguru-gelf-extension}}
+    % \item Autenticação em um servidor NGINX, utilizado a funcionaliade via sub requisição;
+    \item \github{\href{https://github.com/augustoliks/nginx-auth-proxy-ldap}{https://github.com/augustoliks/nginx-auth-proxy-ldap}}
 \end{itemize}
-
 
 \clearpage
 
