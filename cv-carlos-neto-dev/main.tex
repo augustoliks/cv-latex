@@ -107,42 +107,50 @@
 
 \cvevent{Programador Júnior 2}{Fotosensores Tecnologia Eletrônica LTDA | Mobilidade Urbana}{Agosto 2020 -- Presente}{São José dos Campos-SP}
 \begin{itemize}
-    \item Desenvolvimento, criação de bibliotecas e scripts com Python;
+    \item Desenvolvimento de bibliotecas, scripts e sistemas de integração com Python;
     \item Desenvolvimento de utilitários de linha de comando com Go;
     % \item Preparação de ambientes de produção com Docker Compose, criação e otimização de imagens Docker e provisionamento com Ansible;
-    \item Provisionamento de ambientes com Ansible;
-    \item Integração de sistemas através de API com FastAPI e Flask;
-    \item Configuração de entrada, filtro/transformação e saída de logs com Fluent Bit, Rsyslog, Redis e Graylog;
-    \item Mensageria entre microserviços com RabbitMQ, Redis e ZeroMQ;
-    \item Empacotamento de softwares para o formato RPM;
-    \item Criação e padronização de rotinas CI/CD com o Gitlab;
-    \item Documentação de código fonte e projetos com MKDocs e Sphinx, com acesso via GitLab Pages;
+    \item Provisionamento e customização de sistemas com Ansible;
+    % \item Integração de sistemas através de API com FastAPI e Flask;
+    \item Ingestão de logs com Rsyslog, Fluent Bit, Redis e Journald;
+    \item Criação de plugins Rsyslog com Python e Go;
+    \item Coleta e padronização de métricas com Prometheus;
+    \item Exibição de métricas com Grafana, Zabbix e Graylog;
+    % \item Criação e padronização de rotinas CI/CD com o Gitlab;
+    \item Documentação com MKDocs e Sphinx;
+    \item Configuração de servidores Web com NGINX (SSL/TLS);
+    \item Configuração de repositórios Yum, PyPI e Docker Registry com Nexus Repository;
+    \item Padronização de rotinas de CI/CD com Gitlab integrado ao Nexus Repository para a constução de:
+        \begin{itemize}
+            \item Pacotes RPM, construídos com rpm-build;
+            \item Imagens de Containers, construídas com Docker e Buildah;
+            \item Bibliotecas Python, construídas com Poetry e pip;
+            \item Bibliotecas Java, construídas com Maven.
+        \end{itemize}
     % \item Estudos técnicos com base nas regras de negócio da empresa;
     % (\href{https://pt.wikipedia.org/wiki/Prova_de_conceito}{PoC})
-    \item Configuração de servidores Web, através do NGINX (SSL/TLS).
+
 \end{itemize}
 
 \divider
 
 \cvevent{Programador Júnior 1}{Fotosensores Tecnologia Eletrônica LTDA | Mobilidade Urbana}{Junho 2019 -- Agosto 2020}{São José dos Campos-SP}
 \begin{itemize}
-    \item Desenvolvimento, criação de bibliotecas e testes com Python;
-    % \item Integração de sistemas através de API com FastAPI e Flask;
-    \item Provisionamento de ambientes com Docker Compose;
-    \item Coleta de métricas e monitoramento de sistemas com Python, Shell Script, Prometheus, Zabbix e Grafana.
+    \item Configuração e automação de testes de performance de sensores metrológicos de trânsitos com Python;
+    \item Criação de scripts de automação de tarefas de infra com Python e Shell Script.
 \end{itemize}
 
 \cvsection{Projetos}
 
 \cvevent{Sistema de Monitoramento de Equipamentos Fiscalizadores de Trânsito}
-{\MakeLowercase{python, bash, ansible, fastapi, zabbix, grafana, nginx, LDAP, gitlab ci/cd, docker-compose}} {Abril 2018 -- Junho 2019}{}
+{\MakeLowercase{python, bash, ansible, fastapi, zabbix, grafana, nginx, LDAP, gitlab ci/cd, docker-compose}} {}{}
 \begin{itemize}
     \item Desenvolvido para a empresa Fotosensores LTDA.
 \end{itemize}
 \divider
 
 \cvevent{Plugin de Inventário Ansible}
-{\MakeLowercase{ansible, python, fastapi}}{Junho 2021}{}
+{\MakeLowercase{ansible, python, fastapi}}{}{}
 \begin{itemize}
     % \item Plugin de inventário Ansible, criada para obter equipamentos de forma costumizável, por meio de uma API HTTP;
     \item \github{\href{https://github.com/augustoliks/ansible-ws-inventory-plugin}{https://github.com/augustoliks/ansible-ws-inventory-plugin}}
@@ -150,7 +158,7 @@
 \divider
 
 \cvevent{Integração de Autenticação NGINX com LDAP}
-{\MakeLowercase{python, flask, nginx, ldap, docker}}{Junho 2021}{}
+{\MakeLowercase{python, flask, nginx, ldap, docker}}{}{}
 \begin{itemize}
     % \item Autenticação em um servidor NGINX, utilizado a funcionaliade via sub requisição;
     \item \github{\href{https://github.com/augustoliks/nginx-auth-proxy-ldap}{https://github.com/augustoliks/nginx-auth-proxy-ldap}}
